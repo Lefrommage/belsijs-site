@@ -1,7 +1,11 @@
 import LogoBel from "../assets/Logo's/Logo - Bel's ijs - witte achtergrond_Vanille - primair logo.png";
 import { NavLink } from "react-router-dom";
 
-const Logo = () => {
+interface LogoProperties {
+  className?: string;
+}
+
+const Logo = ({ className }: LogoProperties) => {
   return (
     <NavLink to="/" className="inline-block group">
       <img

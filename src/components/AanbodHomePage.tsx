@@ -62,9 +62,7 @@ const AanbodHomePage = () => {
 
             {/* Name + extra info */}
             <div className="relative text-center py-6 text-gray-700">
-            <p className="font-semibold text-lg">{item.name}</p>
-            <p className="text-sm text-gray-500">{item.size}</p>
-            <p className="mt-1 font-bold text-amber-500">{item.price}</p>
+              <p className="font-semibold text-lg">{item.name}</p>
             </div>
           </div>
         ))}
