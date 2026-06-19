@@ -26,7 +26,11 @@ const Nav = ({ className = "" }) => {
       </NavLink>
 
       <NavLink to="/lammetjespret" className={linkStyle}>
-        Lammetjespret <New />
+        Lammetjespret
+      </NavLink>
+
+      <NavLink to="/ijsautomaat" className={linkStyle}>
+        Ijsautomaat <New />
       </NavLink>
 
       <Dropdown

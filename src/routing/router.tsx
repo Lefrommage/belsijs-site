@@ -4,6 +4,7 @@ import HomePage from "../pages/HomePage";
 import AanbodPage from "../pages/AanbodPage";
 import FoodtruckInfoPage from "../pages/FoodtruckInfoPage";
 import LammetjespretPage from "../pages/LammetjespretPage";
+import IjsautomatenPage from "../pages/IjsautomatenPage";
 import OntdekPage from "../pages/OntdekPage";
 import ContactPage from "../pages/ContactPage";
 
@@ -16,6 +17,7 @@ export const router = createBrowserRouter([
       { path: "aanbod", element: <AanbodPage /> },
       { path: "foodtruck", element: <FoodtruckInfoPage /> },
       { path: "lammetjespret", element: <LammetjespretPage /> },
+      { path: "ijsautomaat", element: <IjsautomatenPage /> },
       { path: "ontdek", element: <OntdekPage /> },
       { path: "contact", element: <ContactPage /> },
     ],
