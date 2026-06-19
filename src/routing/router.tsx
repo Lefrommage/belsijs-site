@@ -14,10 +14,10 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: "aanbod", element: <AanbodPage /> },
-      { path: "foodtruck", element: <FoodtruckInfoPage />},
-      { path: "lammetjespret", element: <LammetjespretPage />},
-      { path: "ontdek", element: <OntdekPage />},
-      { path: "contact", element: <ContactPage />}
+      { path: "foodtruck", element: <FoodtruckInfoPage /> },
+      { path: "lammetjespret", element: <LammetjespretPage /> },
+      { path: "ontdek", element: <OntdekPage /> },
+      { path: "contact", element: <ContactPage /> },
     ],
   },
 ]);

@@ -8,7 +8,9 @@ const linkStyle =
 const Nav = ({ className = "" }) => {
   return (
     <nav className={`relative font-semibold ${className}`}>
-      <NavLink to="/" className={linkStyle}>Home</NavLink>
+      <NavLink to="/" className={linkStyle}>
+        Home
+      </NavLink>
 
       <Dropdown
         label="Aanbod"
@@ -19,7 +21,9 @@ const Nav = ({ className = "" }) => {
         ]}
       />
 
-      <NavLink to="/foodtruck" className={linkStyle}>Foodtruck</NavLink>
+      <NavLink to="/foodtruck" className={linkStyle}>
+        Foodtruck
+      </NavLink>
 
       <NavLink to="/lammetjespret" className={linkStyle}>
         Lammetjespret <New />
@@ -30,6 +34,7 @@ const Nav = ({ className = "" }) => {
         items={[
           { to: "/ontdek#overons", label: "Over Ons" },
           { to: "/ontdek#waaromgeitenmelk", label: "Waarom Geitenmelk?" },
+          { to: "/ontdek#faq", label: "Veel gestelde vragen" },
         ]}
       />
     </nav>

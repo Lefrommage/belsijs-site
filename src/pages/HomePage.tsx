@@ -5,6 +5,14 @@ import meergeiten from "../assets/belfotos/meergeiten.jpg";
 import isaijs from "../assets/belfotos/isaijs.jpg";
 import { NavLink } from "react-router-dom";
 import AanbodHomePage from "../components/AanbodHomePage";
+import GoogleReview from "../components/GoogleReview";
+
+const reviews = [
+  { id: 1, name: "Lien Vermeersch", rating: 5, date: "2 weken geleden", text: "Heerlijk ijs! Vers en romig, je proeft dat het ambachtelijk gemaakt is. We komen zeker terug." },
+  { id: 2, name: "Thomas De Smedt", rating: 5, date: "1 maand geleden", text: "Het lekkerste schepijs uit de buurt. De vanille is een absolute aanrader." },
+  { id: 3, name: "An Peeters", rating: 5, date: "3 weken geleden", text: "Geweldige ijstaart besteld voor een verjaardagsfeestje. Iedereen was vol lof!" },
+];
+
 
 const HomePage = () => {
   const images = [IMG_3671, bel, geitfoto, meergeiten, isaijs];
@@ -97,8 +105,52 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="mt-16 px-6 text-center">
+      {/* Divider */}
+      <div className="max-w-5xl mx-auto px-6 mt-24">
+        <hr className="border-t border-gray-200" />
+      </div>
+
+      <section className="mt-24 px-6 text-center">
         <AanbodHomePage />
+      </section>
+
+      {/* Divider */}
+      <div className="max-w-5xl mx-auto px-6 mt-24">
+        <hr className="border-t border-gray-200" />
+      </div>
+
+      {/* Over Bel's ijs */}
+      <section className="mt-24 max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-14">
+        <img
+          src={isaijs}
+          alt="Over Bel's ijs"
+          className="w-full md:w-1/2 rounded-3xl object-cover shadow-lg aspect-square"
+        />
+        <div className="md:w-1/2 text-left">
+          <h2 className="text-4xl font-bold font-sirenia mb-6">Over Bel's ijs</h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="max-w-5xl mx-auto px-6 mt-24">
+        <hr className="border-t border-gray-200" />
+      </div>
+
+      {/* Recensies */}
+      <section className="mt-24 mb-24 max-w-5xl mx-auto px-6">
+        <h2 className="text-3xl font-semibold font-sirenia mb-2">Wat onze klanten zeggen</h2>
+        <p className="text-gray-400 text-sm mb-8">Beoordelingen via Google</p>
+        <div className="grid md:grid-cols-3 gap-5">
+          {reviews.map((r) => (
+            <GoogleReview key={r.id} name={r.name} rating={r.rating} date={r.date} text={r.text} />
+          ))}
+        </div>
       </section>
     </div>
   );

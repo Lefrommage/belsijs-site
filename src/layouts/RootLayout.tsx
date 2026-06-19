@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MobileHeader from "../components/MobileHeader";
+import ScrollToHash from "../components/ScrollToHash";
 // import Grain from "../components/Grain";
 
 const RootLayout = () => {
@@ -12,6 +13,7 @@ const RootLayout = () => {
         <MobileHeader />
       </header>
 
+      <ScrollToHash />
 
       <main className="pt-24">
         <Outlet />
